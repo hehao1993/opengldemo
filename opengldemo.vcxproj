@@ -134,6 +134,8 @@
   <ItemGroup>
     <ClCompile Include="C:\Users\admin\Desktop\glad\src\glad.c" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="triangle.cpp" />
+    <ClCompile Include="window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
