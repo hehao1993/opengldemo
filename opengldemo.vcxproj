@@ -134,8 +134,14 @@
   <ItemGroup>
     <ClCompile Include="C:\Users\admin\Desktop\glad\src\glad.c" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="triangle.cpp" />
-    <ClCompile Include="window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="shader_s.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="3.3.shader.fs" />
+    <None Include="3.3.shader.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
