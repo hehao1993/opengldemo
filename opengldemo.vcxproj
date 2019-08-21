@@ -134,6 +134,7 @@
   <ItemGroup>
     <ClInclude Include="resource.h" />
     <ClInclude Include="shader_s.h" />
+    <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="3.3.shader.fs" />
