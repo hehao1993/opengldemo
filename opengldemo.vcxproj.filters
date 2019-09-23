@@ -26,10 +26,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="4.1.texture.vs">
+    <None Include="5.2.transform.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="4.1.texture.fs">
+    <None Include="5.2.transform.fs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>

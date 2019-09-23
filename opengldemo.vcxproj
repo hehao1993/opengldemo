@@ -137,8 +137,8 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="4.1.texture.fs" />
-    <None Include="4.1.texture.vs" />
+    <None Include="5.2.transform.fs" />
+    <None Include="5.2.transform.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
