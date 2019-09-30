@@ -24,12 +24,15 @@
     <ClInclude Include="shader_m.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="6.2.coordinate_systems.fs">
+    <None Include="7.4.camera.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="6.2.coordinate_systems.vs">
+    <None Include="7.4.camera.vs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>

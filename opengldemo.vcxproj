@@ -77,6 +77,10 @@
     <IncludePath>D:\Libraries\Includes;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
     <LibraryPath>D:\Libraries\Libs;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>D:\Libraries\Includes;$(VC_IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>D:\Libraries\Libs;$(VC_LibraryPath_x64);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -135,10 +139,11 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="shader_m.h" />
     <ClInclude Include="stb_image.h" />
+    <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="6.2.coordinate_systems.fs" />
-    <None Include="6.2.coordinate_systems.vs" />
+    <None Include="7.4.camera.fs" />
+    <None Include="7.4.camera.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
