@@ -27,12 +27,21 @@
     <ClInclude Include="camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="7.4.camera.fs">
+    <None Include="1.colors.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="7.4.camera.vs">
+    <None Include="1.colors.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="1.lamp.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="1.lamp.vs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
