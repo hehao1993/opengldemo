@@ -138,16 +138,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
-    <ClInclude Include="resource1.h" />
     <ClInclude Include="shader_m.h" />
     <ClInclude Include="stb_image.h" />
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="1.colors.fs" />
-    <None Include="1.colors.vs" />
-    <None Include="1.lamp.fs" />
-    <None Include="1.lamp.vs" />
+    <None Include="lighting.fs" />
+    <None Include="lighting.vs" />
+    <None Include="lamp.fs" />
+    <None Include="lamp.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
@@ -155,7 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="awesomeface.png" />
-    <Image Include="container.jpg" />
+    <Image Include="container.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
