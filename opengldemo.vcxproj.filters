@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="resource.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="stb_image.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -27,18 +24,18 @@
     <ClInclude Include="camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="lighting.fs">
+    <None Include="model_loading.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="lighting.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="lamp.fs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="lamp.vs">
+    <None Include="model_loading.vs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
@@ -49,22 +46,5 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="awesomeface.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="container.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="container_specular.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="container_specular_color.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="matrix.jpg">
-      <Filter>资源文件</Filter>
-    </Image>
   </ItemGroup>
 </Project>
