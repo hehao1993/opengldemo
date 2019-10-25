@@ -18,9 +18,6 @@
     <ClInclude Include="stb_image.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="shader_m.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -30,12 +27,18 @@
     <ClInclude Include="model.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="model_loading.fs">
+    <None Include="stencil_testing.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="model_loading.vs">
+    <None Include="stencil_testing.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="stencil_single_color.fs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
@@ -46,5 +49,13 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="metal.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="marble.png">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>
