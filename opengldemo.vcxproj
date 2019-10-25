@@ -144,15 +144,15 @@
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="stencil_testing.fs" />
-    <None Include="stencil_testing.vs" />
-    <None Include="stencil_single_color.fs" />
+    <None Include="blending.fs" />
+    <None Include="blending.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="grass.png" />
     <Image Include="marble.png" />
     <Image Include="metal.png" />
   </ItemGroup>

@@ -32,13 +32,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="stencil_testing.fs">
+    <None Include="blending.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="stencil_testing.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="stencil_single_color.fs">
+    <None Include="blending.vs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
@@ -55,6 +52,9 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="marble.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="grass.png">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
