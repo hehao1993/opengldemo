@@ -140,7 +140,6 @@
     <ClInclude Include="mesh.h" />
     <ClInclude Include="model.h" />
     <ClInclude Include="shader.h" />
-    <ClInclude Include="stb_image.h" />
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
@@ -152,6 +151,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="window.png" />
     <Image Include="grass.png" />
     <Image Include="marble.png" />
     <Image Include="metal.png" />
