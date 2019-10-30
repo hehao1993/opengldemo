@@ -29,10 +29,16 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="blending.fs">
+    <None Include="framebuffers.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="blending.vs">
+    <None Include="framebuffers.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="framebuffers_screen.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="framebuffers_screen.fs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>

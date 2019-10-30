@@ -143,8 +143,10 @@
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="blending.fs" />
-    <None Include="blending.vs" />
+    <None Include="framebuffers.fs" />
+    <None Include="framebuffers.vs" />
+    <None Include="framebuffers_screen.fs" />
+    <None Include="framebuffers_screen.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
