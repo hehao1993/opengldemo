@@ -29,16 +29,16 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="framebuffers.fs">
+    <None Include="skybox.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="framebuffers.vs">
+    <None Include="skybox.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="framebuffers_screen.vs">
+    <None Include="cubemaps.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="framebuffers_screen.fs">
+    <None Include="cubemaps.vs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
@@ -51,16 +51,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="metal.png">
-      <Filter>资源文件</Filter>
-    </Image>
     <Image Include="marble.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="grass.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="window.png">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

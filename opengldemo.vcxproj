@@ -143,20 +143,17 @@
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="framebuffers.fs" />
-    <None Include="framebuffers.vs" />
-    <None Include="framebuffers_screen.fs" />
-    <None Include="framebuffers_screen.vs" />
+    <None Include="cubemaps.fs" />
+    <None Include="cubemaps.vs" />
+    <None Include="skybox.fs" />
+    <None Include="skybox.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="window.png" />
-    <Image Include="grass.png" />
     <Image Include="marble.png" />
-    <Image Include="metal.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
