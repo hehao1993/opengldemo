@@ -58,6 +58,7 @@ public:
 	void Draw(Shader shader)
 	{
 		// bind appropriate textures
+		unsigned int reflectNr = 1;
 		unsigned int diffuseNr = 1;
 		unsigned int specularNr = 1;
 		unsigned int normalNr = 1;
@@ -68,7 +69,9 @@ public:
 			// retrieve texture number (the N in diffuse_textureN)
 			string number;
 			string name = textures[i].type;
-			if (name == "texture_diffuse")
+			if (name == "texture_reflect")
+				number = std::to_string(reflectNr++);
+			else if (name == "texture_diffuse")
 				number = std::to_string(diffuseNr++);
 			else if (name == "texture_specular")
 				number = std::to_string(specularNr++); // transfer unsigned int to stream

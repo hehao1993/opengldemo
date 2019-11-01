@@ -150,6 +150,9 @@ private:
 		// specular: texture_specularN
 		// normal: texture_normalN
 
+		// 1. reflect maps
+		vector<Texture> reflectMaps = loadMaterialTextures(material, aiTextureType_AMBIENT, "texture_reflect");
+		textures.insert(textures.end(), reflectMaps.begin(), reflectMaps.end());
 		// 1. diffuse maps
 		vector<Texture> diffuseMaps = loadMaterialTextures(material, aiTextureType_DIFFUSE, "texture_diffuse");
 		textures.insert(textures.end(), diffuseMaps.begin(), diffuseMaps.end());
