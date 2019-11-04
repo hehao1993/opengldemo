@@ -29,16 +29,19 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="skybox.vs">
+    <None Include="advanced_glsl.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="skybox.fs">
+    <None Include="red.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="cubemaps.fs">
+    <None Include="green.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="cubemaps.vs">
+    <None Include="blue.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="yellow.fs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
@@ -49,10 +52,5 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="marble.png">
-      <Filter>资源文件</Filter>
-    </Image>
   </ItemGroup>
 </Project>

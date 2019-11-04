@@ -143,17 +143,15 @@
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="cubemaps.fs" />
-    <None Include="cubemaps.vs" />
-    <None Include="skybox.fs" />
-    <None Include="skybox.vs" />
+    <None Include="blue.fs" />
+    <None Include="green.fs" />
+    <None Include="red.fs" />
+    <None Include="advanced_glsl.vs" />
+    <None Include="yellow.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="marble.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
