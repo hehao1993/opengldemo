@@ -143,11 +143,9 @@
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="blue.fs" />
-    <None Include="green.fs" />
-    <None Include="red.fs" />
-    <None Include="advanced_glsl.vs" />
-    <None Include="yellow.fs" />
+    <None Include="geometry_shader.gs" />
+    <None Include="geometry_shader.fs" />
+    <None Include="geometry_shader.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />

@@ -29,19 +29,13 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="advanced_glsl.vs">
+    <None Include="geometry_shader.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="red.fs">
+    <None Include="geometry_shader.gs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="green.fs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="blue.fs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="yellow.fs">
+    <None Include="geometry_shader.fs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
