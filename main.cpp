@@ -1,5 +1,6 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <stb_image.h>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -74,7 +75,8 @@ int main()
 
 	// build and compile shaders
 	// -------------------------
-	Shader shader("geometry_shader.vs", "geometry_shader.fs", "geometry_shader.gs");
+	Shader shader("default.vs", "default.fs");
+	Shader normalShader("normal_visualization.vs", "normal_visualization.fs", "normal_visualization.gs");
 
 	// load models
 	// -----------
@@ -101,18 +103,23 @@ int main()
 
 		// configure transformation matrices
 		glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)SCR_WIDTH / (float)SCR_HEIGHT, 1.0f, 100.0f);
-		glm::mat4 view = camera.GetViewMatrix();;
+		glm::mat4 view = camera.GetViewMatrix();
 		glm::mat4 model = glm::mat4(1.0f);
 		shader.use();
 		shader.setMat4("projection", projection);
 		shader.setMat4("view", view);
 		shader.setMat4("model", model);
 
-		// add time component to geometry shader in the form of a uniform
-		shader.setFloat("time", glfwGetTime());
-
-		// draw model
+		// draw model as usual
 		nanosuit.Draw(shader);
+
+		// then draw model with normal visualizing geometry shader
+		normalShader.use();
+		normalShader.setMat4("projection", projection);
+		normalShader.setMat4("view", view);
+		normalShader.setMat4("model", model);
+
+		nanosuit.Draw(normalShader);
 
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
 		// -------------------------------------------------------------------------------

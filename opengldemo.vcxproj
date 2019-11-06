@@ -143,9 +143,11 @@
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="geometry_shader.gs" />
-    <None Include="geometry_shader.fs" />
-    <None Include="geometry_shader.vs" />
+    <None Include="default.fs" />
+    <None Include="default.vs" />
+    <None Include="normal_visualization.gs" />
+    <None Include="normal_visualization.fs" />
+    <None Include="normal_visualization.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
