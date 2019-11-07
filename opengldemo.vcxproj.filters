@@ -29,19 +29,16 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="normal_visualization.fs">
+    <None Include="asteroids.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="normal_visualization.gs">
+    <None Include="asteroids.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="normal_visualization.vs">
+    <None Include="planet.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="default.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="default.fs">
+    <None Include="planet.fs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
