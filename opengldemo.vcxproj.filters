@@ -29,16 +29,16 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="asteroids.vs">
+    <None Include="anti_aliasing.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="asteroids.fs">
+    <None Include="anti_aliasing.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="planet.vs">
+    <None Include="aa_post.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="planet.fs">
+    <None Include="aa_post.fs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>

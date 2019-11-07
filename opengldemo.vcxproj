@@ -143,10 +143,10 @@
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="asteroids.fs" />
-    <None Include="asteroids.vs" />
-    <None Include="planet.fs" />
-    <None Include="planet.vs" />
+    <None Include="aa_post.fs" />
+    <None Include="aa_post.vs" />
+    <None Include="anti_aliasing.fs" />
+    <None Include="anti_aliasing.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
