@@ -29,16 +29,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="anti_aliasing.vs">
+    <None Include="gamma_correction.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="anti_aliasing.fs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="aa_post.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="aa_post.fs">
+    <None Include="gamma_correction.vs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
@@ -49,5 +43,10 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="wood.png">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>
