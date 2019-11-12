@@ -143,8 +143,12 @@
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="gamma_correction.fs" />
-    <None Include="gamma_correction.vs" />
+    <None Include="debug_quad.vs" />
+    <None Include="debug_quad_depth.fs" />
+    <None Include="shadow_mapping.fs" />
+    <None Include="shadow_mapping.vs" />
+    <None Include="shadow_mapping_depth.fs" />
+    <None Include="shadow_mapping_depth.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />

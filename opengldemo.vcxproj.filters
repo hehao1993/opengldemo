@@ -29,10 +29,22 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="gamma_correction.fs">
+    <None Include="shadow_mapping_depth.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="gamma_correction.vs">
+    <None Include="shadow_mapping_depth.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="debug_quad.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="debug_quad_depth.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shadow_mapping.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shadow_mapping.fs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
