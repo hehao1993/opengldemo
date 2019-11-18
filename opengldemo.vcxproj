@@ -143,12 +143,11 @@
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="debug_quad.vs" />
-    <None Include="debug_quad_depth.fs" />
-    <None Include="shadow_mapping.fs" />
-    <None Include="shadow_mapping.vs" />
-    <None Include="shadow_mapping_depth.fs" />
-    <None Include="shadow_mapping_depth.vs" />
+    <None Include="point_shadows.fs" />
+    <None Include="point_shadows.vs" />
+    <None Include="point_shadows_depth.fs" />
+    <None Include="point_shadows_depth.gs" />
+    <None Include="point_shadows_depth.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />

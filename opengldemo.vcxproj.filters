@@ -29,22 +29,19 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shadow_mapping_depth.fs">
+    <None Include="point_shadows.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="shadow_mapping_depth.vs">
+    <None Include="point_shadows.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="debug_quad.vs">
+    <None Include="point_shadows_depth.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="debug_quad_depth.fs">
+    <None Include="point_shadows_depth.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="shadow_mapping.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="shadow_mapping.fs">
+    <None Include="point_shadows_depth.gs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
