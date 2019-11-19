@@ -8,13 +8,16 @@ in VS_OUT {
 } fs_in;
 
 uniform sampler2D diffuseTexture;
+uniform sampler2D wallTexture;
 uniform samplerCube depthMap;
+uniform sampler2D normalMap;
 
 uniform vec3 lightPos;
 uniform vec3 viewPos;
 
 uniform float far_plane;
 uniform bool shadows;
+uniform bool reverse_normals;
 
 
 // array of offset direction for sampling
@@ -83,6 +86,14 @@ void main()
 {           
     vec3 color = texture(diffuseTexture, fs_in.TexCoords).rgb;
     vec3 normal = normalize(fs_in.Normal);
+	if(reverse_normals)
+	{
+		color = texture(wallTexture, fs_in.TexCoords).rgb;
+		// obtain normal from normal map in range [0,1]
+		normal = texture(normalMap, fs_in.TexCoords).rgb;
+		// transform normal vector to range [-1,1]
+		normal = normalize(normal * 2.0 - 1.0);  
+	}
     vec3 lightColor = vec3(0.3);
     // ambient
     vec3 ambient = 0.3 * color;

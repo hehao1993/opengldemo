@@ -87,6 +87,8 @@ int main()
 	// load textures
 	// -------------
 	unsigned int woodTexture = loadTexture("wood.png");
+	unsigned int wallTexture = loadTexture("brickwall.jpg");
+	unsigned int normalMap = loadTexture("brickwall_normal.jpg");
 
 	// configure depth map FBO
 	// -----------------------
@@ -116,7 +118,9 @@ int main()
 	// --------------------
 	shader.use();
 	shader.setInt("diffuseTexture", 0);
-	shader.setInt("depthMap", 1);
+	shader.setInt("depthMap", 1); 
+	shader.setInt("wallTexture", 2);
+	shader.setInt("normalMap", 3);
 
 	// lighting info
 	// -------------
@@ -188,6 +192,10 @@ int main()
 		glBindTexture(GL_TEXTURE_2D, woodTexture);
 		glActiveTexture(GL_TEXTURE1);
 		glBindTexture(GL_TEXTURE_CUBE_MAP, depthCubemap);
+		glActiveTexture(GL_TEXTURE2);
+		glBindTexture(GL_TEXTURE_2D, wallTexture);
+		glActiveTexture(GL_TEXTURE3);
+		glBindTexture(GL_TEXTURE_2D, normalMap);
 		renderScene(shader);
 
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
