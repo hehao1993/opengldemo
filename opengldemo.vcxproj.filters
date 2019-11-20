@@ -29,19 +29,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="point_shadows.fs">
+    <None Include="normal_mapping.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="point_shadows.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="point_shadows_depth.fs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="point_shadows_depth.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="point_shadows_depth.gs">
+    <None Include="normal_mapping.vs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
@@ -54,9 +45,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="wood.png">
-      <Filter>资源文件</Filter>
-    </Image>
     <Image Include="brickwall.jpg">
       <Filter>资源文件</Filter>
     </Image>
