@@ -143,16 +143,20 @@
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="normal_mapping.fs" />
-    <None Include="normal_mapping.vs" />
+    <None Include="parallax_mapping.fs" />
+    <None Include="parallax_mapping.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="brickwall.jpg" />
-    <Image Include="brickwall_normal.jpg" />
+    <Image Include="bricks.jpg" />
+    <Image Include="bricks_disp.jpg" />
+    <Image Include="bricks_normal.jpg" />
+    <Image Include="toy_box_disp.png" />
+    <Image Include="toy_box_normal.png" />
+    <Image Include="wood.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

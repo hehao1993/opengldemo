@@ -1,5 +1,7 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#define STB_IMAGE_IMPLEMENTATION
+#include <stb_image.h>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -7,7 +9,6 @@
 
 #include "shader.h"
 #include "camera.h"
-#include "model.h"
 
 #include <iostream>
 
@@ -21,6 +22,7 @@ void renderQuad();
 // settings
 const unsigned int SCR_WIDTH = 1280;
 const unsigned int SCR_HEIGHT = 720;
+float heightScale = 0.1;
 
 // camera
 Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
@@ -76,18 +78,27 @@ int main()
 
 	// build and compile shaders
 	// -------------------------
-	Shader shader("normal_mapping.vs", "normal_mapping.fs");
+	Shader shader("parallax_mapping.vs", "parallax_mapping.fs");
 
 	// load textures
 	// -------------
-	unsigned int texture_diffuse1 = loadTexture("brickwall.jpg");
-	unsigned int texture_normal1 = loadTexture("brickwall_normal.jpg");
+	/*unsigned int diffuseMap = loadTexture("bricks.jpg");
+	unsigned int normalMap = loadTexture("bricks_normal.jpg");
+	unsigned int heightMap = loadTexture("bricks_disp.jpg");*/
+	unsigned int diffuseMap = loadTexture("wood.png");
+	unsigned int normalMap = loadTexture("toy_box_normal.png");
+	unsigned int heightMap = loadTexture("toy_box_disp.png");
+
+	// shader configuration
+	// --------------------
+	shader.use();
+	shader.setInt("diffuseMap", 0);
+	shader.setInt("normalMap", 1);
+	shader.setInt("depthMap", 2);
 
 	// lighting info
 	// -------------
 	glm::vec3 lightPos(0.5f, 1.0f, 0.3f);
-
-	Model nanosuit("nanosuit/nanosuit.obj");
 
 	// render loop
 	// -----------
@@ -114,21 +125,20 @@ int main()
 		shader.use();
 		shader.setMat4("projection", projection);
 		shader.setMat4("view", view);
-		// render normal-mapped quad
+		// render parallax-mapped quad
 		glm::mat4 model = glm::mat4(1.0f);
-		model = glm::rotate(model, glm::radians((float)glfwGetTime() * -10.0f), glm::normalize(glm::vec3(1.0, 0.0, 1.0))); // rotate the quad to show normal mapping from multiple directions
+		model = glm::rotate(model, glm::radians((float)glfwGetTime() * -10.0f), glm::normalize(glm::vec3(1.0, 0.0, 1.0))); // rotate the quad to show parallax mapping from multiple directions
 		shader.setMat4("model", model);
 		shader.setVec3("viewPos", camera.Position);
 		shader.setVec3("lightPos", lightPos);
-		nanosuit.Draw(shader);
-
-		shader.use();
-		shader.setInt("texture_diffuse1", 0);
-		shader.setInt("texture_normal1", 1);
+		shader.setFloat("heightScale", heightScale); // adjust with Q and E keys
+		std::cout << heightScale << std::endl;
 		glActiveTexture(GL_TEXTURE0);
-		glBindTexture(GL_TEXTURE_2D, texture_diffuse1);
+		glBindTexture(GL_TEXTURE_2D, diffuseMap);
 		glActiveTexture(GL_TEXTURE1);
-		glBindTexture(GL_TEXTURE_2D, texture_normal1);
+		glBindTexture(GL_TEXTURE_2D, normalMap);
+		glActiveTexture(GL_TEXTURE2);
+		glBindTexture(GL_TEXTURE_2D, heightMap);
 		renderQuad();
 
 		// render light source (simply re-renders a smaller plane at the light's position for debugging/visualization)
@@ -179,7 +189,7 @@ void renderQuad()
 		glm::vec2 deltaUV1 = uv2 - uv1;
 		glm::vec2 deltaUV2 = uv3 - uv1;
 
-		GLfloat f = 1.0f / (deltaUV1.x * deltaUV2.y - deltaUV2.x * deltaUV1.y);
+		float f = 1.0f / (deltaUV1.x * deltaUV2.y - deltaUV2.x * deltaUV1.y);
 
 		tangent1.x = f * (deltaUV2.y * edge1.x - deltaUV1.y * edge2.x);
 		tangent1.y = f * (deltaUV2.y * edge1.y - deltaUV1.y * edge2.y);
@@ -259,6 +269,21 @@ void processInput(GLFWwindow* window)
 		camera.ProcessKeyboard(LEFT, deltaTime);
 	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
 		camera.ProcessKeyboard(RIGHT, deltaTime);
+
+	if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
+	{
+		if (heightScale > 0.0f)
+			heightScale -= 0.0005f;
+		else
+			heightScale = 0.0f;
+	}
+	else if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS)
+	{
+		if (heightScale < 1.0f)
+			heightScale += 0.0005f;
+		else
+			heightScale = 1.0f;
+	}
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes
@@ -320,8 +345,8 @@ unsigned int loadTexture(char const* path)
 		glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
 		glGenerateMipmap(GL_TEXTURE_2D);
 
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, format == GL_RGBA ? GL_CLAMP_TO_EDGE : GL_REPEAT); // for this tutorial: use GL_CLAMP_TO_EDGE to prevent semi-transparent borders. Due to interpolation it takes texels from next repeat 
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, format == GL_RGBA ? GL_CLAMP_TO_EDGE : GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 

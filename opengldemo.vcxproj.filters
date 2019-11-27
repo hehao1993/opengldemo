@@ -29,10 +29,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="normal_mapping.fs">
+    <None Include="parallax_mapping.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="normal_mapping.vs">
+    <None Include="parallax_mapping.vs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
@@ -45,10 +45,22 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="brickwall.jpg">
+    <Image Include="bricks.jpg">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="brickwall_normal.jpg">
+    <Image Include="bricks_disp.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="bricks_normal.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="toy_box_disp.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="toy_box_normal.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="wood.png">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
