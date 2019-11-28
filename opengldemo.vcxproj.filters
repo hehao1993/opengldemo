@@ -29,10 +29,16 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="parallax_mapping.fs">
+    <None Include="lighting.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="parallax_mapping.vs">
+    <None Include="lighting.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="hdr.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="hdr.vs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
@@ -45,21 +51,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="bricks.jpg">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="bricks_disp.jpg">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="bricks_normal.jpg">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="toy_box_disp.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="toy_box_normal.png">
-      <Filter>资源文件</Filter>
-    </Image>
     <Image Include="wood.png">
       <Filter>资源文件</Filter>
     </Image>

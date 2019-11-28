@@ -143,19 +143,16 @@
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="parallax_mapping.fs" />
-    <None Include="parallax_mapping.vs" />
+    <None Include="lighting.vs" />
+    <None Include="lighting.fs" />
+    <None Include="hdr.fs" />
+    <None Include="hdr.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="bricks.jpg" />
-    <Image Include="bricks_disp.jpg" />
-    <Image Include="bricks_normal.jpg" />
-    <Image Include="toy_box_disp.png" />
-    <Image Include="toy_box_normal.png" />
     <Image Include="wood.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
