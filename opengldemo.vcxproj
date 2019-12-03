@@ -143,16 +143,20 @@
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="lighting.vs" />
-    <None Include="lighting.fs" />
-    <None Include="hdr.fs" />
-    <None Include="hdr.vs" />
+    <None Include="bloom_final.fs" />
+    <None Include="bloom_final.vs" />
+    <None Include="blur.vs" />
+    <None Include="blur.fs" />
+    <None Include="bloom.fs" />
+    <None Include="bloom.vs" />
+    <None Include="light_box.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="container.png" />
     <Image Include="wood.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

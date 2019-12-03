@@ -29,16 +29,25 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="lighting.vs">
+    <None Include="bloom.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="lighting.fs">
+    <None Include="bloom.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="hdr.fs">
+    <None Include="light_box.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="hdr.vs">
+    <None Include="blur.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="blur.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="bloom_final.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="bloom_final.fs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
@@ -52,6 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="wood.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="container.png">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
