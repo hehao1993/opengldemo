@@ -143,13 +143,12 @@
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bloom_final.fs" />
-    <None Include="bloom_final.vs" />
-    <None Include="blur.vs" />
-    <None Include="blur.fs" />
-    <None Include="bloom.fs" />
-    <None Include="bloom.vs" />
-    <None Include="light_box.fs" />
+    <None Include="deferred_shading.fs" />
+    <None Include="deferred_shading.vs" />
+    <None Include="deferred_light_box.vs" />
+    <None Include="deferred_light_box.fs" />
+    <None Include="g_buffer.fs" />
+    <None Include="g_buffer.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
