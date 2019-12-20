@@ -29,22 +29,22 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="g_buffer.fs">
+    <None Include="ssao_geometry.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="g_buffer.vs">
+    <None Include="ssao_geometry.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="deferred_shading.fs">
+    <None Include="ssao.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="deferred_shading.vs">
+    <None Include="ssao.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="deferred_light_box.fs">
+    <None Include="ssao_lightin.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="deferred_light_box.vs">
+    <None Include="ssao_blur.fs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
