@@ -41,10 +41,10 @@
     <None Include="ssao.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="ssao_lightin.fs">
+    <None Include="ssao_blur.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="ssao_blur.fs">
+    <None Include="ssao_lighting.fs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
