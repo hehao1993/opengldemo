@@ -29,22 +29,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ssao_geometry.fs">
+    <None Include="pbr.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="ssao_geometry.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="ssao.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="ssao.fs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="ssao_blur.fs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="ssao_lighting.fs">
+    <None Include="pbr.vs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
@@ -57,10 +45,16 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="wood.png">
+    <Image Include="albedo.png">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="container.png">
+    <Image Include="metallic.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="normal.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="roughness.png">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
