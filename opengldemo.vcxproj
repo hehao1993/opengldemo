@@ -143,18 +143,16 @@
     <ClInclude Include="camera.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="background.fs" />
+    <None Include="background.vs" />
+    <None Include="cubemap.vs" />
+    <None Include="equirectangular_to_cubemap.fs" />
     <None Include="pbr.fs" />
     <None Include="pbr.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="albedo.png" />
-    <Image Include="metallic.png" />
-    <Image Include="normal.png" />
-    <Image Include="roughness.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

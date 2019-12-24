@@ -35,6 +35,18 @@
     <None Include="pbr.vs">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="cubemap.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="equirectangular_to_cubemap.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="background.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="background.fs">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -43,19 +55,5 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="albedo.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="metallic.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="normal.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="roughness.png">
-      <Filter>资源文件</Filter>
-    </Image>
   </ItemGroup>
 </Project>
