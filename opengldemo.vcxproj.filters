@@ -47,6 +47,12 @@
     <None Include="background.fs">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="newport_loft.hdr">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="irradiance_convolution.fs">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
