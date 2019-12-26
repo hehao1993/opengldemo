@@ -29,37 +29,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="pbr.fs">
+    <None Include="text.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="pbr.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="cubemap.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="equirectangular_to_cubemap.fs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="background.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="background.fs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="newport_loft.hdr">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="irradiance_convolution.fs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="prefilter.fs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="brdf.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="brdf.fs">
+    <None Include="text.vs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
@@ -70,5 +43,10 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="arial.ttf">
+      <Filter>资源文件</Filter>
+    </Font>
   </ItemGroup>
 </Project>
